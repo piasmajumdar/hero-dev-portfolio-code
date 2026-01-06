@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #f42004e4;
+}
+
 .section-heading {
     max-width: 827px;
     text-align: center;
@@ -172,6 +176,7 @@ nav .menu a {
 #skills .skills-container .skill-box {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .skill-box .skill-card {
