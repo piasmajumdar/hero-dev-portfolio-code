@@ -5,7 +5,7 @@
 }
 
 /* shared style  */
-.font-open-sans {
+.font-open-sns {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
@@ -61,7 +61,7 @@
 }
 
 .container {
-        width: 71%;
+    width: 71%;
     max-width: 1140px;
     margin: 0 auto;
 }
