@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 /* shared style  */
 .font-open-sns {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 
@@ -74,7 +74,7 @@ header {
     background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
     background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
-}  
+}
 
 nav {
     /* border: 1px solid red; */
@@ -132,12 +132,14 @@ nav .menu a {
     max-width: 585px;
 }
 
-#banner .banner-image img{
+#banner .banner-image img {
     max-width: 585px;
     vertical-align: middle;
 }
 
-#about , #skills, #resume{
+#about,
+#skills,
+#resume {
     padding-top: 130px;
 }
 
@@ -170,7 +172,7 @@ nav .menu a {
 
 #skills .skills-container {
     /* background-color: #FD6E0A; */
- 
+
 }
 
 #skills .skills-container .skill-box {
@@ -226,7 +228,7 @@ nav .menu a {
     margin-right: 47px;
 }
 
-.resume-card .card-title  {
+.resume-card .card-title {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -276,11 +278,12 @@ footer .footer-container {
 }
 
 
-.footer-container .icons a{
+.footer-container .icons a {
     margin-right: 24px;
 }
 
-.footer-container form input[type="text"], .footer-container form textarea{
+.footer-container form input[type="text"],
+.footer-container form textarea {
     width: 461px;
     padding: 18px 31px;
     margin-bottom: 24px;
@@ -292,3 +295,117 @@ footer .footer-container {
 
 
 
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 60%;
+    }
+
+    nav,
+    .menu,
+    #banner,
+    .nav-btns,
+    #about .about-container .about-info,
+    #resume .resume-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-btns {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #banner .banner-content,
+    #banner .banner-image img {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #banner {
+        margin: 0 10px;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 2rem;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    #banner .banner-content p {
+        font-size: 1rem;
+    }
+
+    header {
+        background-color: #FFF8F3;
+        padding-top: 10px;
+        background: none, url(../images/header_bg.png), #FFF8F3;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    #skills .skills-container .skill-box,
+    #about .about-container .about-info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about-container .about-info {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-info .info-card h4,
+    .about-info .info-card p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    #about .about-container {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .section-heading p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #about,
+    #skills,
+    #resume {
+        padding-top: 30px;
+    }
+
+    #resume .resume-container {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 30px;
+        background-color: #FFF8F3;
+        padding: 10px 10px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 100%;
+        padding: 18px 31px;
+        margin-bottom: 20px;
+    }
+
+}
